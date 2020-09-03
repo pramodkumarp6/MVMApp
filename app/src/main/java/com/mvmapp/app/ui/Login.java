@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import com.mvmapp.app.R;
 import com.mvmapp.app.databinding.ActivityLoginBinding;
+import com.mvmapp.app.userDashboard.ProfileActivity;
 import com.mvmapp.app.viewmodel.LoginModel;
 import com.mvmapp.app.viewmodel.UserViewModelFactory;
 
@@ -41,7 +42,7 @@ public class Login extends AppCompatActivity {
         activityLoginBinding.textViewRegister1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               Intent sigup = new Intent(Login.this,SignUp.class);
+               Intent sigup = new Intent(Login.this, ProfileActivity.class);
                startActivity(sigup);
             }
         });

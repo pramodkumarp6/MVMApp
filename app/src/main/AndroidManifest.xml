@@ -12,7 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.SignUp"></activity>
+        <activity
+            android:name=".userDashboard.ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".ui.SignUp" />
         <activity android:name=".ui.ForgetPassword" />
         <activity android:name=".ui.Login" />
         <activity android:name=".HomeActivity">
